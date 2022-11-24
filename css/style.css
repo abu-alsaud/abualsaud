@@ -407,39 +407,46 @@ section {
 
 
 
+
 .heading{
 	text-align: center;
 }
+
 .heading h2{
 	font-size: 3rem;
 	font-weight: 500;
 	margin: 7px 0px 20px;
 	line-height: 1.1;
 }
+
 .heading h3{
 	color: var(--text-color5);
 	font-size: 20px;
 	font-weight: 500;
 }
+
 .heading p{
 	font-size: 1.1rem;
 	color: var(--text-color7);
 	line-height: 28px;
 }
+
 .portfolio-content{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(400px, auto));
 	grid-gap: 1rem;
 	align-items: center;
-	margin-top: 5rem;
+	margin-top: 7rem;
 	text-align: center;
 	cursor: pointer;
 }
+
 .col{
 	position: relative;
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .col img{
 	max-width: 100%;
 	width: 500px;
@@ -447,6 +454,7 @@ section {
 	object-fit: cover;
 	border-radius: 12px;
 }
+
 .layer{
 	background: transparent;
 	height: 100%;
@@ -457,9 +465,11 @@ section {
 	border-radius: 12px;
 	transition: all .40s;
 }
+
 .layer:hover{
 	background: linear-gradient(rgba(0,0,0,0.5) 0%, #191919);
 }
+
 .layer h3{
 	position: absolute;
 	width: 100%;
@@ -472,6 +482,7 @@ section {
 	opacity: 0;
 	transition: all .40s;
 }
+
 .layer:hover h3{
 	bottom: 52%;
 	opacity: 1;
@@ -489,11 +500,123 @@ section {
 	opacity: 0;
 	transition: all .40s;
 }
+
 .layer:hover h5{
 	bottom: 48%;
 	opacity: 1;
 }
 
+.content {
+    height: 100vh;
+    
+}
+
+form {
+    float: right;
+}
+
+.tex {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    width: 520px;
+    height: 62px;
+    border-radius: 13px;
+    padding-left: 20px;
+    font-size: 15px;
+    margin-left: 80px;
+    background: #EEEEEE;
+    border: none;
+}
+
+.email {
+    display: block;
+    width: 520px;
+    height: 62px;
+    border-radius: 13px;
+    padding-left: 20px;
+    font-size: 15px;
+    margin-left: 80px;
+    background: #EEEEEE;
+    border: none;
+}
+
+
+.messg {
+    display: block;
+    margin-bottom: 20px;
+    width: 520px;
+    height: 155px;
+    padding-bottom: 120px;
+    border-radius: 20px;
+    padding-left: 37px;
+    padding-top: 15px;
+    font-size: 15px;
+    bottom: -45px;
+    margin-left: 80px;
+    position: relative;
+    background: #EEEEEE;
+    border: none;
+}
+
+.btn-send {
+    display: block;
+    margin-bottom: 20px;
+    width: 520px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    bottom: -45px;
+    margin-left: 80px;
+    position: relative;
+    background: var(--text-color5);
+    border: none;
+    cursor: pointer;
+    color: #EEEEEE;
+}
+
+.btn-send::placeholder{
+    color: #EEEEEE;
+}
+
+.btn-send:hover {
+    background: #aa3e29;
+}
+
+
+::placeholder {
+    color: var(--text-color7);
+}
+
+.content-icons {
+    width: 470px;
+    position: relative;
+    bottom: -7px;
+}
+
+.text-con {
+    position: relative;
+    left: 100px;
+    top: -18px;
+}
+
+.end {
+    background: #C84B31;
+    padding: 10px 50px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.end span {
+    color: #EEEEEE;
+    font-weight: 500;
+}
+
+.content {
+    height: 100vh;
+}
 
 
 
@@ -660,6 +783,66 @@ nav ul li a{
     transition: all .40s;
 }
 
+.heading h2{
+	font-size: 26px;
+	font-weight: 500;
+	margin: 7px 0px 20px;
+	line-height: 1.1;
+}
+.heading h3{
+	color: var(--text-color5);
+	font-size: 20px;
+	font-weight: 500;
+}
+.heading p{
+	font-size: 1.1rem;
+	color: var(--text-color7);
+	line-height: 28px;
+}
+
+.content-icons {
+    display: none;
+}
+
+.tex {
+    position: relative;
+    width: 317px;
+    margin-right: -152px;
+    left: -60px;
+
+}
+
+.btn-send  {
+    position: relative;
+    width: 317px;
+    margin-right: -152px;
+    left: -60px;
+}
+
+.messg {
+    position: relative;
+    width: 317px;
+    margin-right: -152px;
+    left: -60px;
+}
+
+.email {
+    position: relative;
+    width: 317px;
+    margin-right: -152px;
+    left: -60px;
+}
+
+form {
+    float: right;
+}
+
+.end {
+    padding: 10px 50px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
 }
 
 
@@ -708,5 +891,13 @@ a:hover,a.active{
 
 #check:checked ~ ul{
     left: 0;
+}
+}
+
+
+@media (max-width: 412px){
+    form {
+        position: relative;
+        left: -6px;
 }
 }
