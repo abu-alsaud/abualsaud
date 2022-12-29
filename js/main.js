@@ -1,24 +1,70 @@
-const nav = document.querySelector("nav");
+/* Start Page */
 
-window.addEventListener ("scroll", function() {
-	nav.classList.toggle ("sticky", window.scrollY > 0);
+window.onload = function () {
+    var spinner = document.getElementById('sp');
+    document.body.style.overflow = "hidden";
+
+    setTimeout(function () {
+        spinner.style.display = "none";
+        document.body.style.overflow = "auto";
+    },3000);
+    
+}
+
+
+let header = document.querySelector("header");
+let menu = document.querySelector("#menu-icon");
+let navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+  header.classList.toggle("shadow", window.scrollY > 0);
 });
 
-let menu = document.querySelector('#menu-icon');
-let navlist = document.querySelector('.navlist');
-
 menu.onclick = () => {
-	menu.classList.toggle('bx-x');
-	navlist.classList.toggle('active');
+  navbar.classList.toggle("active");
 };
-
 window.onscroll = () => {
-	menu.classList.remove('.navlist');
-	navlist.classList.remove('active');
+  navbar.classList.remove("active");
 };
 
-const sr = ScrollReveal ({
-	distance: '45px',
-	duration: 2700,
-	reset: true
-})
+// Dark Mode / light mode
+let darkmode = document.querySelector("#darkmode");
+
+darkmode.onclick = () => {
+  if (darkmode.classList.contains("bx-moon")) {
+    darkmode.classList.replace("bx-moon", "bx-sun");
+    document.body.classList.add("active");
+  } else {
+    darkmode.classList.replace("bx-sun", "bx-moon");
+    document.body.classList.remove("active");
+  }
+};
+
+let btnMenu = document.getElementById('menu-icon');
+let btnClos = document.getElementById('clos-icon');
+let navBar = document.querySelector('.navbar');
+
+btnMenu.onclick = function(){
+  navBar.style.display = 'block';
+  btnClos.style.display = 'block';
+  this.style.display = 'none';
+}
+
+btnClos.onclick = function(){
+  navBar.style.display = 'none';
+  btnMenu.style.display = 'block';
+  btnClos.style.display = 'none';
+}
+
+
+
+
+
+
+// ScrollReveal().reveal('.main', { delay: 500, reset: true });
+// ScrollReveal().reveal('.exper-carts', { delay: 500, reset: true });
+// ScrollReveal().reveal('.about', { delay: 510, reset: true });
+// ScrollReveal().reveal('.skills', { delay: 500, reset: true });
+// ScrollReveal().reveal('.Projects', { delay: 500, reset: true });
+// ScrollReveal().reveal('.content', { delay: 500, reset: true });
+//ScrollReveal().reveal('.end', { delay: 500, reset: true });
