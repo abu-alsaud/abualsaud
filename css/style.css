@@ -830,10 +830,10 @@ form {
     }
 
     .main img {
-        padding: 10px;
+        
         width: 224px;
         display: flex;
-        background: var(--main-color);
+        
         align-items: center;
         margin: 0;
         justify-content: center;
@@ -950,10 +950,9 @@ form {
     }
 
     .main img {
-        padding: 10px;
         width: 224px;
         display: flex;
-        background: var(--main-color);
+       
         align-items: center;
         margin: 0;
         justify-content: center;
