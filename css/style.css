@@ -1028,7 +1028,7 @@ form {
     .navbar {
         display: none;
         position: absolute;
-        background-color: #0f0c27;
+        background-color: var(--bg-color);
         margin: 0;
         left: 0;
         top: 55px;
