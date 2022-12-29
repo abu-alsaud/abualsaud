@@ -839,7 +839,7 @@ form {
         justify-content: center;
         border-radius: 50%;
         left: 22%;
-        top: 100px;
+        top: 65px;
         position: absolute;
     }
 
@@ -945,8 +945,7 @@ form {
     .navbar {
         display: none;
         position: absolute;
-        background: var(--bg-color);
-        color: var(--text-color);
+        background-color: #0f0c27;
         margin: 0;
         left: 0;
         top: 55px;
